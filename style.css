@@ -102,7 +102,7 @@ img {
 header {
   width: 100%;
   height: 110vh;
-  margin-bottom: 12rem;
+  margin-bottom: 4rem;
 }
 
 header .container {
@@ -189,6 +189,8 @@ header .container {
 /* GET IN TOUCH BUTTON */
 .exp-btn {
   margin-top: 3rem;
+  margin-right: 1rem;
+  display: inline-block;
 }
 
 .exp-btn-txt a {
@@ -230,11 +232,94 @@ header .container {
   z-index: -2
 }
 
+/* PROJECTS */
+.project {
+  max-width: 90%;
+  margin: auto;
+}
+
+.project .proj-title {
+  text-align: right;
+  margin: 5rem 0;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #092f46;
+  font-weight: 500;
+  opacity: 0.7;
+}
+
+.project .wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.wrapper > div {
+  height: 410px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.proj-1 {
+  color: #fff;
+  margin: 10px 5px 10px 10px;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('images/dice-match-img.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: .5s ease;
+}
+
+.proj-1:hover {
+  background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/dice-match-img.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: scale(0.98);
+}
+
+.proj-2 {
+  color: #fff;
+  margin: 10px 10px 10px 5px;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('images/drum-set-img.png'), rgba(0,0,0,.8);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: .5s ease;
+}
+
+.proj-2:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/drum-set-img.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: scale(0.98);
+}
+
+.project .wrapper a {
+  padding: .6rem 2rem;
+  border-radius: 3px;
+  margin: 2rem;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  background: #00a8cc;
+  color: #eee;
+  transition: .5s ease-in-out;
+}
+
+.project .wrapper a:hover {
+  background: #00a8cc;
+  color: #eee;
+  padding: .4rem 1.5rem;
+}
+
 /* ABOUT */
 .about {
   background: #092f46;
   width: 95%;
-  margin: 4rem auto 6rem;
+  margin: 12rem auto 6rem;
 }
 
 .about .container {
@@ -376,6 +461,7 @@ header .container {
 
 .contact .container {
   background: #09768e;
+  padding-bottom: 2px;
 }
 
 .contact .section-heading h1 {
@@ -388,9 +474,13 @@ header .container {
 
 .contact .email {
   text-align: center;
-  font-size: 2.8rem;
   color: #eee;
   letter-spacing: 1px;
+  padding-top: 5rem;
+}
+
+.contact .email h6 {
+  font-size: 2.5rem;
 }
 
 .contact .email .my-email a{
@@ -407,7 +497,7 @@ header .container {
 .copyright {
   width: 100%;
   text-align: center;
-  padding: 2rem 0;
+  padding: 2.5rem 0;
   position: relative;
   color: rgba(0, 0, 0, 0.8);
 }
@@ -480,6 +570,7 @@ header .container {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    padding-bottom: 15rem;
   }
 
   .nav-list li {
@@ -612,6 +703,28 @@ header .container {
     font-size: 1.6rem;
   }
 
+  .project .proj-title {
+    font-size: 2.8rem;
+  }
+
+  .project .wrapper {
+    width: 70%;
+    margin: auto;
+  }
+
+  .project .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .proj-1 {
+    margin: 10px 10px 5px 10px;
+  }
+
+  .proj-2 {
+    margin: 5px 10px 10px 10px;
+  }
+
   .portfolio-img {
     margin-right: 3rem;
     display: flex;
@@ -717,12 +830,37 @@ header .container {
     height: 25rem;
     bottom: -14rem;
   }
+
+  .design {
+    display: none;
+  }
+
+  .design2 {
+    display: none;
+  }
+
+  .project .proj-title {
+    text-align: center;
+  }
+
+  .contact .email {
+    font-size: 2.2rem;
+  }
 }
 
 @media screen and (max-width: 561px) {
   .landing-text h1::before {
     height: 26.5rem;
     bottom: -14.5rem;
+  }
+
+  .exp-btn-txt a {
+    font-size: 1.5rem;
+  }
+
+  .project .wrapper {
+    width: 80%;
+    margin: auto;
   }
 }
 
@@ -751,18 +889,8 @@ header .container {
     top: 56%;
   }
 
-  .design {
-    top: 14rem;
-    height: 70%;
-  }
-
-  .design2 {
-    top: 18rem;
-    height: 70%;
-  }
-
   .copyright p{
-    font-size: 1rem;
+    font-size: .8rem;
   }
 }
 
@@ -778,14 +906,5 @@ header .container {
   .landing-text h1::before {
     height: 27rem;
     bottom: -15rem;
-  }
-
-  .design {
-    top: 15rem;
-  }
-
-  .design2 {
-    top: 19rem;
-    width: 71%;
   }
 }
