@@ -820,6 +820,10 @@ header .container {
     width: 85%;
   }
 
+  .contact .email h6 {
+    font-size: 1.8rem;
+  }
+
   .up {
     right: 2rem;
   }
