@@ -4,14 +4,9 @@
 <head>
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
   <title>Dillon DiPetrillo</title>
-  <!-- FAVICON -->
-  <link rel="shortcut icon" type="image/png" href="images/page-icon.png" />
-
-  <!-- ANIMATED SCROLL -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <!-- FONTAWESOME  -->
-  <script src="https://kit.fontawesome.com/3f95d841ab.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
   <!-- GOOGLE FONTS -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -21,149 +16,285 @@
 </head>
 
 <body>
-
-  <!-- NAVBAR / BURGER MENU -->
-  <header>
-    <div class="menu-toggler">
-      <div class="bar half start"></div>
-      <div class="bar"></div>
-      <div class="bar half end"></div>
-    </div>
-    <nav class="top-nav">
-      <ul class="nav-list">
+ 
+  <!-- Nav Section -->
+  <div class="nav">
+    <div class="content">
+      <div class="logo">
+        <a href="#top">Dillon DiPetrillo</a>
+      </div>
+      <ul class="main-list">
         <li>
-          <a href="index.html" class="nav-link">Home</a>
+          <a href="#project">Projects</a>
         </li>
         <li>
-          <a href="#project" class="nav-link">Projects</a>
+          <a href="#about">About</a>
         </li>
         <li>
-          <a href="#about" class="nav-link">About</a>
-        </li>
-        <li>
-          <a href="#services" class="nav-link">Services</a>
-        </li>
-        <li>
-          <a href="#contact" class="nav-link">Contact</a>
+          <a href="#contact">Contact</a>
         </li>
       </ul>
-    </nav>
-
-    <!-- MAIN PAGE TEXT -->
-    <div class="container">
-      <div class="landing-text">
-        <h1>Dillon <br />DiPetrillo</h1>
-        <h6>UI <span class="color-line">|</span> UX Designer<span class="color-line"> | </span>IOS Developer<span class="color-line"> | </span>Web Developer</h6>
-        <div class="exp-btn">
-          <div class="exp-btn-txt"><a href="#contact">Get in touch</a></div>
-        </div>
-        <div class="exp-btn">
-          <div class="exp-btn-txt"><a href="#project">See My Work</a></div>
-        </div>
+      <div class="burger">
+        <div class="start line"></div>
+        <div class="bottom line"> </div>
       </div>
     </div>
+    <div class="burger-nav">
+      <ul>
+        <a href="#top" class="burger-item">
+          <li>Home</li>
+        </a>
+        <a href="#project" class="burger-item">
+          <li>Projects</li>
+        </a>
+        <a href="#about" class="burger-item">
+          <li>About</li>
+        </a>
+        <a href="#contact" class="burger-item">
+          <li>Contact</li>
+        </a>
+      </ul>
+      <a href="#" class="burger-logo">Dillon DiPetrillo</a>
+    </div>
+    <div class="overlay"></div>
+  </div>
 
-    <!-- MAIN PAGE DESIGN -->
-    <div class="design"></div>
-    <div class="design2"></div>
-  </header>
-
-  <!-- PROJECTS -->
-  <div class="project" id="project">
-    <h1 class="proj-title" data-aos="fade-left" data-aos-delay="300">Some of my work</h1>
-    <div class="wrapper">
-        <div class="proj-1">
-          <a href="https://github.com/dillondipetrillo/Dice-Match" target="_blank">Github</a>
-          <a href="https://dillondipetrillo.com/Dice-Match/" target="_blank">Website</a>
+  <!-- Top Section -->
+  <div class="top" id="top">
+    <div class="content">
+      <div class="main-text">
+        <h1>Dillon DiPetrillo</h1>
+        <div class="descript">
+          <h6>UI/UX Designer</h6>  
+          <h6>Web Developer</h6>
+          <h6>iOS Developer</h6>
         </div>
-        <div class="proj-2">
-          <a href="https://github.com/dillondipetrillo/Drum-Set" target="_blank">Github</a>
-          <a href="https://dillondipetrillo.com/Drum-Set/" target="_blank">Website</a>
+        <div class="mobile-descript">
+          <h6>Designer</h6>
+          <h6>Developer</h6>
         </div>
+        <div class="sub-text">
+          <p>Hello, my name is Dillon DiPetrillo and I <span class="bold">design</span> and <span class="bold">build</span> logos, websites, and iOS applications.</p>
+        </div>
+      </div>
+      <div class="top-btn">
+        <a href="#project">See My Work</a>
+      </div>
     </div>
   </div>
 
-  <!-- ABOUT PAGE -->
-  <section class="about" id="about">
-    <div class="container">
-      <div class="portfolio-img" data-aos="fade-right" data-aos-delay="300">
-        <img src="images/profile-img.jpg" alt="profile-image">
+  <!-- Project Section -->
+  <div class="projects" id="project">
+    <div class="content">
+      <div class="page-title">
+        <div class="page-left">
+          <h1>Latest Projects</h1>
+          <h6>See what I've been working on and what's to come...</h6>
+        </div>
+        <div class="page-right">
+          <a href="#about">Learn More</a>
+        </div>
       </div>
-      <div class="about-details" data-aos="fade-left" data-aos-delay="600">
-        <div class="about-heading">
-          <h1>About Me</h1>
-          <p>I'm Dillon DiPetrillo, a computer science student and a UI & UX Web and IOS Developer who is constantly learning. Creating user-friendly websites and applications with clean and clear code is a passion of mine. Design and usability while
-            staying simplistic are what I believe make a great user experience. I love what I do and I hope we can work together.</p>
-
-          <!-- SKILLS -->
-          <p class="about-skills">HTML <span class="color-line">|</span> CSS <span class="color-line">|</span> BOOTSTRAP <span class="color-line">|</span> JAVASCRIPT <span class="color-line">|</span> JQUERY <span class="color-line">|</span> PHP <span
-              class="color-line">|</span> SWIFT</p>
-          <div class="social-media">
-            <a href="https://github.com/dillondipetrillo?tab=repositories" target="blank">
-              <i class="fab fa-github"></i>
-            </a>
+      <div class="container">
+        <div class="project one">
+          <a href="https://dillondipetrillo.com/lead-fitness/" target="_blank">
+            <div class="project-head">
+              <div class="project-img"></div>
+            </div>
+            <div class="project-descript">
+              <h6>Simple, free, and easy to access workouts</h6>
+              <div class="project-cta">
+                <h1>Lead Fitness</h1>
+                <a href="https://github.com/dillondipetrillo/lead-fitness" target="_blank" class="cta">How I Was Made</a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="project two">
+          <a href="https://dillondipetrillo.com/drum-set/" target="_blank">
+            <div class="project-head">
+              <div class="project-img"></div>
+            </div>
+            <div class="project-descript">
+              <h6>Designed for on-the-go drummers</h6>
+              <div class="project-cta">
+                <h1>Drum Set</h1>
+                <a href="https://github.com/dillondipetrillo/drum-set" target="_blank" class="cta">How I Was Made</a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="project three">
+          <a href="https://dillondipetrillo.com/dice-match/" target="_blank">
+            <div class="project-head">
+              <div class="project-img"></div>
+            </div>
+            <div class="project-descript">
+              <h6>Easy-to-use game for decisions</h6>
+              <div class="project-cta">
+                <h1>Dice Match</h1>
+                <a href="https://github.com/dillondipetrillo/dice-match" target="_blank" class="cta">How I Was Made</a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="project">
+          <div class="project-head-soon">
+            <h1>Coming Soon</h1>
+          </div>
+          <div class="project-descript">
+            <h6>In progress</h6>
+            <div class="project-cta">
+              <h1>Untitled</h1>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
 
-  <!-- SERVICES -->
-  <section class="services" id="services">
-    <div class="container">
-      <div class="section-heading">
-        <h1>Services</h1>
-        <h6>What I can do for you</h6>
-      </div>
-      <div class="my-skills">
-        <div class="skill" data-aos="fade-in" data-aos-delay="300">
-          <div class="icon-container">
-            <i class="fas fa-sitemap"></i>
+  <!-- Section Divide -->
+  <div class="divide">
+
+  </div>
+
+  <!-- About Section -->
+  <div class="about" id="about">
+    <div class="content">
+      <div class="title">
+        <div class="about-cta">
+          <h1>Hello There,</h1>
+          <div class="about-link">
+            <a href="#contact">Say Hi</a>
           </div>
-          <h1>Web Design</h1>
-          <p>Making beautiful designs and layouts for desktop and mobile use are some of the most important aspects when making amazing websites.</p>
         </div>
-        <div class="skill" data-aos="fade-in" data-aos-delay="600">
-          <div class="icon-container">
+        <h6>I'm Dillon, a <span>designer</span> and <span>developer</span>. I'm also a Computer Science student who is constantly learning. I believe <span>simplicity</span> and <span>efficiency</span> are some of the most important aspects when it comes to creating user-friendly websites and applications. Writing clean and clear code to bring ideas and products to life is a passion of mine.</h6>
+      </div>
+      <div class="skill">
+        <div class="design one">
+          <div class="design-head">
+            <i class="fas fa-layer-group"></i>
+            <h4>Designer</h4>
+          </div>
+          <div class="design-container">
+            <div class="design-body">
+              <p>Clean designs and layouts are what I believe to be the most effective</p>
+            </div>
+            <div class="design-footer">
+              <h4>What I design</h4>
+              <p>Logos, Digital Photos, UI/UX, Websites, Mobile Apps</p>
+              <h4>What I use</h4>
+              <p>Adobe XD, Adobe Illustrator, Adobe Photoshop</p>
+            </div>
+          </div>
+        </div>
+        <div class="design two">
+          <div class="design-head">
             <i class="fas fa-code"></i>
+            <h4>Web Developer</h4>
           </div>
-          <h1>Web Development</h1>
-          <p>Keeping code simple while still solving complex problems is key when building websites and web apps with functionality that serve a purpose.</p>
+          <div class="design-container">
+            <div class="design-body">
+              <p>Writing code and creating a space to bring ideas to life is a passion of mine</p>
+            </div>
+            <div class="design-footer">
+              <h4>How I develop</h4>
+              <p>HTML, CSS, Javascript, PHP</p>
+              <h4>What I use</h4>
+              <p>Visual Studio Code, Atom, Codepen, Github, Terminal</p>
+            </div>
+          </div>
         </div>
-        <div class="skill" data-aos="fade-in" data-aos-delay="900">
-          <div class="icon-container">
-            <i class="fab fa-apple"></i>
+        <div class="design three">
+          <div class="design-head">
+            <i class="fas fa-mobile"></i>
+            <h4>iOS Developer</h4>
           </div>
-          <h1>IOS Development</h1>
-          <p>IOS applications are a great way to get your product and idea to as many people as possible. An app with a great UI and UX is key.</p>
+          <div class="design-container">
+            <div class="design-body">
+              <p>Writing code and creating a space to bring ideas to life is a passion of mine</p>
+            </div>
+            <div class="design-footer">
+              <h4>How I develop</h4>
+              <p>Swift, MVC</p>
+              <h4>What I use</h4>
+              <p>Xcode, Github</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- CONTACT INFO -->
-  <section class="contact" id="contact">
-    <div class="container">
-      <div class="section-heading">
-        <h1>Contact Me</h1>
-        <h6>How can I help you?</h6>
-        <div class="email">
-          <h6>Email: <span class="my-email"><a href="mailto:dillonrdipetrillo@gmail.com">dillonrdipetrillo@gmail.com</a> </span></h6>
-        </div>
+      <div class="social-media">
+        <a href="https://github.com/dillondipetrillo" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/dillon-dipetrillo-8bb5611b8/" target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://twitter.com/d_dipetrillo" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com/dillonrdip/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
       </div>
     </div>
-  </section>
+  </div>
 
-  <!-- FOOTER COPYRIGHT -->
-  <footer class="copyright">
-    <div class="up" id="up">
-      <i class="fas fa-chevron-up"></i>
+  <!-- Section Divide -->
+  <div class="divide">
+
+  </div>
+
+  <!-- Contact Section -->
+  <div class="contact">
+    <div class="content">
+      <div class="contact-header">
+        <h4>Design</h4>
+        <h1>Dillon DiPetrillo</h1>
+        <h4>Develop</h4>
+      </div>
+      <div class="contact-logo">
+        <!-- <h1>Get In<br>Touch</h1> -->
+        <i class="far fa-paper-plane"></i>
+      </div>
     </div>
-    <p>Copyright &copy; 2020 Dillon DiPetrillo. All Rights Reserved</p>
-  </footer>
+  </div>
+  <div class="contact-body" id="contact">
+    <div class="content">
+      <form class="contact-form" action="contactform.php" method="post">
+        <input class="contact-form-text" type="text" name="name" placeholder="Full Name" pattern=[A-Z\sa-z]{3,20} required>
+        <input class="contact-form-text" type="email" name="mail" placeholder="Your Email" required>
+        <input class="contact-form-text" type="text" name="subject" placeholder="Subject" required>
+        <textarea class="contact-form-text" name="message" placeholder="Your Message"></textarea>
+        <button class="contact-form-btn" type="submit" name="submit" value="send">Send</button>
+      </form>
+    </div>
+  </div>
 
-  <!-- ANIMATE ON SCROLL JQUERY -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <!-- Footer Section -->
+  <div class="footer">
+    <div class="content">
+      <div class="footer-head">
+        <a href="#top">
+          <h1>Dillon DiPetrillo</h1>
+        </a>
+      </div>
+      <div class="social-media">
+        <a href="https://github.com/dillondipetrillo" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/dillon-dipetrillo-8bb5611b8/" target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://twitter.com/d_dipetrillo" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com/dillonrdip/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+  </div>
 
   <!-- JQUERY -->
   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>

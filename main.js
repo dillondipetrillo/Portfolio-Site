@@ -1,38 +1,50 @@
-$(document).ready(function () {
-  // NAVBAR ANIMATE OPEN
-  $('.menu-toggler').on('click', function () {
-        $(this).toggleClass('open');
-        $('.top-nav').toggleClass('open');
-  });
+const body = document.querySelector('body');
+const overlay = document.querySelector('.overlay');
+const burger = document.querySelector('.burger');
+const burgerNav = document.querySelector('.burger-nav');
+const navLogo = document.querySelector('.burger-logo');
+const topLine = document.querySelector('.start');
+const bottomLine = document.querySelector('.bottom');
 
-  $('.nav-link').on('click', function() {
-    $('.top-nav').removeClass('open');
-    $('.menu-toggler').removeClass('open');
-  });
+burger.addEventListener('click', function(){ //burger menu function
 
-  // SMOOTH SCROLL NAVBAR
-  $('.nav-list li a, .exp-btn a').click(function(e) {
-    var targetHref = $(this).attr('href');
+  overlay.classList.toggle('open');
+  burgerNav.classList.toggle('open');
+  body.classList.toggle('noScroll');
+  topLine.classList.toggle('open');
+  bottomLine.classList.toggle('open');
 
-    $('html, body').animate({
-      scrollTop: $(targetHref).offset().top
-    }, 1000);
-
-    e.preventDefault();
-  });
-
-  // SCROLL TO TOP
-  $('#up').click(function() {
-    $('html, body').animate({
-      scrollTop: 0
-    }, 1000);
-    return false;
-  });
-
-  // ANIMATE ON SCROLL SETTINGS
-  AOS.init({
-    easing: 'ease',
-    duration: 900,
-    once: 'true'
-  });
 });
+
+overlay.addEventListener('click', function(){ //overlay click function
+
+  if (overlay.classList.contains('open')) {
+    overlay.classList.remove('open');
+    burgerNav.classList.remove('open');
+    body.classList.remove('noScroll');
+    topLine.classList.remove('open');
+    bottomLine.classList.remove('open');
+  }
+
+});
+
+navLogo.addEventListener('click', function() { //nav logo click function
+
+  overlay.classList.remove('open');
+  burgerNav.classList.remove('open');
+  body.classList.remove('noScroll');
+  topLine.classList.remove('open');
+  bottomLine.classList.remove('open');
+
+});
+
+$('.burger-nav ul a').click(function() { //burger nav item function
+  
+  overlay.classList.remove('open');
+  burgerNav.classList.remove('open');
+  body.classList.remove('noScroll');
+  topLine.classList.remove('open');
+  bottomLine.classList.remove('open');
+
+});
+
