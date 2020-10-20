@@ -337,7 +337,7 @@ ul {
 }
 
 .about .title h6 span {
-  color: rgb(161, 161, 161);
+  color: #0093fa;
   font-size: 22px;
   font-weight: 600;
 }
@@ -886,7 +886,7 @@ textarea.contact-form-text {
 @media (max-width: 650px) {
 
   .top .content {
-    padding: 220px 0px 0px 0px;
+    padding: 220px 0px 10px 0px;
   }
   
   .top .main-text {
@@ -927,7 +927,7 @@ textarea.contact-form-text {
   }
 
   .top .top-btn {
-    margin: 80px 0px 100px 0px;
+    margin: 110px 0px 100px 0px;
   }
   
   .top .top-btn a {
@@ -973,8 +973,8 @@ textarea.contact-form-text {
     padding: 15px;
     width: 100%;
     text-align: center;
-    color: #001e40;
-    background: #fff;
+    /* color: #001e40;
+    background: #fff; */
   }
 
   .projects .page-title .page-right a:hover {
@@ -1007,8 +1007,8 @@ textarea.contact-form-text {
     padding: 15px;
     width: 100%;
     margin-top: 18px;
-    color: #001e40;
-    background: #fff;
+    /* color: #001e40;
+    background: #fff; */
   }
 
   .project .project-cta .cta:hover {
@@ -1180,12 +1180,12 @@ textarea.contact-form-text {
   /* Project Section---------------------------------------- */
 
   .projects .page-title .page-right a:hover {
-    background: #fff;
+    background: #001e40;
     border: 1px solid #fff;
   }
 
   .project .project-cta .cta:hover {
-    background: #fff;
+    background: #001e40;
     border: 1px solid #fff;
   }
 
