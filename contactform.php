@@ -20,7 +20,7 @@ if(isset($_POST['email']) && $_POST['email'] != ''){
 
         mail($to,$messageSubject,$body);
 
-        message_sent = true;
+        $message_sent = true;
 
     } else {
 
