@@ -1,33 +1,25 @@
 <?php
 
-$message_sent = false;
-if(isset($_POST['email']) && $_POST['email'] != ''){
+ini_set('display errors', 1);
+error_reporting(E_ALL);
 
-    if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) ){
+$from = "test@hostinger-submissions.com";
+$to = "dillonrdipetrillo@gmail.com";
 
-        //submit the form
-        $userName = $_POST['name'];
-        $userEmail = $_POST['email'];
-        $messageSubject = $_POST['subject'];
-        $message = $_POST['message'];
+$name = $_POST['name'];
+$email = $_POST['email'];
+$subject = $_POST['subject'];
+$message = $_POST['message'];
 
-        $to = "dillonrdipetrillo@gmail.com";
-        $body = "";
+$headers = "From:" . $from;
+$body = "";
 
-        $body .= "From: ".$userName. "\r\n";
-        $body .= "Email: ".$userEmail. "\r\n";
-        $body .= "Message: ".message. "\r\n";
+$body .= "From: ".$name. "\r\n";
+$body .= "Email: ".$email. "\r\n";
+$body .= "Subject: ".$subject. "\r\n";
 
-        mail($to,$messageSubject,$body);
+mail($to,$body,$message,$headers);
 
-        $message_sent = true;
-
-    } else {
-
-        $invalid_class_name = "form-invalid";
-
-    }
-
-}
+header('Location: https://dillondipetrillo.com/#contact');
 
 ?>
