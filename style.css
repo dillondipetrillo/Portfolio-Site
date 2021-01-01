@@ -228,7 +228,7 @@ ul {
 }
 
 .project .project-img {
-  background: url('images/Lead-fitness-img.png');
+  background: url('images/montre-bg.png');
   background-position: center;
   background-size: cover;
   height: 500px;
@@ -236,7 +236,7 @@ ul {
 }
 
 .project.two .project-img {
-  background: url('images/drum-set-img.png');
+  background: url('images/Lead-fitness-img.png');
   background-position: center;
   background-size: cover;
   height: 500px;
@@ -244,7 +244,7 @@ ul {
 }
 
 .project.three .project-img {
-  background: url('images/dice-match-img.png');
+  background: url('images/drum-set-img.png');
   background-position: center;
   background-size: cover;
   height: 500px;
